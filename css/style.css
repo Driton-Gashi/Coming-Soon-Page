@@ -10,6 +10,24 @@
 html{
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar{
+    width: auto;
+
+}
+::-webkit-scrollbar-thumb{
+    background: crimson;
+    border-radius: 50px;
+    border-left: 2px solid #000;
+    transition: 0.3s ease background;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(220, 20, 60,0.8);
+}
+
+::-webkit-scrollbar-track-piece{
+    background: #000;
+}
 header{
     width: 100%;
     color: white;
@@ -446,7 +464,11 @@ transition: 0.3s ease all;
 .owl-dot.active, .owl-dot:hover{
     background: crimson!important;
 }
-
+.github{
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
 footer{
     background: #111;
     padding: 20px 23px ;
