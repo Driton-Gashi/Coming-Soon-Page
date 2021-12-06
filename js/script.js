@@ -2,8 +2,10 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY < 20) {
       $("header").removeClass("aktive");
+      select.style.color = "crimson";
     } else {
       $("header").addClass("aktive");
+      select.style.color = "#fff";
     }
     if (this.scrollY > 500) {
       $(".scroll-up-btn").addClass("show");

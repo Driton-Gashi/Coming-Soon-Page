@@ -169,23 +169,25 @@ header.aktive {
 .menu li {
   display: inline-block;
   list-style-type: none;
-  padding: 16px;
+  padding: 13px;
   text-transform: capitalize;
   font-weight: 600;
   font-family: "Ubuntu";
-  font-size: 18px;
+  font-size: 1em;
 }
 .menu li a {
   color: white;
   text-decoration: none;
   transition: 0.3s ease;
 }
+
 .menu li a:hover {
   color: crimson;
 }
 .aktive .menu li a:hover {
   color: #fff;
 }
+
 .home {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
@@ -200,6 +202,8 @@ header.aktive {
   left: 25%;
   transform: translate(-50%, -50%);
   font-family: "Ubuntu";
+  width: 32.5%;
+  white-space: nowrap;
 }
 .home-content a {
   text-decoration: none;
@@ -228,7 +232,7 @@ header.aktive {
   display: inline-block !important;
 }
 .text-3 {
-  font-size: 40px;
+  font-size: 35px;
 }
 .text-3 span {
   color: crimson;
@@ -254,7 +258,8 @@ footer {
 #about .title,
 #services .title,
 #skills .title,
-#teams .title {
+#teams .title,
+#contact .title {
   font-family: "Ubuntu" sans-serif;
   position: relative;
   text-align: center;
@@ -266,7 +271,8 @@ footer {
 #about .title::before,
 #services .title::before,
 #skills .title::before,
-#teams .title::before {
+#teams .title::before,
+#contact .title::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -277,7 +283,7 @@ footer {
   transform: translateX(-50%);
 }
 #about .title::after {
-  content: "Kush jam!";
+  content: "Who I am!";
   position: absolute;
   left: 50%;
   bottom: -12px;
@@ -292,6 +298,13 @@ footer {
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
 }
 #about .about-content,
 #services .services-content,
@@ -459,16 +472,16 @@ footer {
   width: 95%;
 }
 .skills .skills-content .right .css::before {
-  width: 75%;
+  width: 80%;
 }
 .skills .skills-content .right .js::before {
-  width: 55%;
+  width: 70%;
 }
 .skills .skills-content .right .bs::before {
-  width: 60%;
+  width: 50%;
 }
 .skills .skills-content .right .git::before {
-  width: 40%;
+  width: 60%;
 }
 
 #skills .skills-content .left p {
@@ -613,12 +626,107 @@ footer .emri {
   opacity: 1;
   pointer-events: auto;
 }
+.social-media {
+  margin-left: 20px;
+}
+.social-media a i {
+  font-size: 22px;
+}
+.social-media a {
+  color: white;
+  margin: 5px;
+  transition: 0.6s ease all;
+}
+.social-media a:hover {
+  color: crimson;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+}
+#contact form {
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+#contact .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#contact .title::after {
+  content: "Contact~Me!";
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+#name,
+#email {
+  margin: 10px 8px;
+  width: 299px;
+  padding: 8px;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  outline: none;
+  background-color: #111;
+  color: crimson;
+}
+#btn {
+  margin: 3px 8px;
+  padding: 10px 100px;
+  border: 2px solid crimson;
+  border-radius: 6px;
+  background-color: crimson;
+  color: white;
+  transition: 0.6s ease all;
+}
+
+#btn:hover {
+  transform: scale(1.05);
+}
+#text-area {
+  width: 620px;
+  margin: 8px;
+  padding: 8px;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  outline: none;
+  background-color: #111;
+  color: crimson;
+}
+#gjuha {
+  background-color: transparent;
+  color: crimson;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease all;
+  text-align: center;
+  margin: auto;
+}
+#gjuha option {
+  background-color: transparent;
+  color: black;
+}
 @media (max-width: 1200px) {
   .home-content {
-    left: 30%;
+    left: 25.7%;
   }
 }
 @media (max-width: 1000px) {
+  .menu li {
+    padding: 16px 8px;
+  }
   .left img {
     width: 350px;
     height: 350px;
@@ -632,8 +740,45 @@ footer .emri {
   .menu {
     margin-right: -55px;
   }
+
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 830px !important;
+  }
 }
 @media (max-width: 800px) {
+  .social-media {
+    margin: 0;
+  }
+  #gjuha {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  #gjuha option {
+    color: crimson;
+  }
+  #contact input,
+  #text-area,
+  #btn,
+  .container,
+  #contact form {
+    width: 99% !important;
+  }
+  #contact form input,
+  #text-area,
+  #btn {
+    position: relative;
+    left: -6.5px;
+  }
+  .social-media {
+    display: block;
+  }
+  .social-media a i {
+    font-size: 30px;
+    margin: 5px;
+  }
   #skills .skills-content .column {
     width: 100%;
   }
@@ -717,15 +862,24 @@ footer .emri {
   .logo a {
     display: inline-block;
     padding: 10px;
+    position: relative;
+    bottom: -5px;
   }
   #navMenu {
     display: inline-block;
   }
+  .services-content .card:last-child {
+    margin: auto;
+  }
 }
+
 @media (max-width: 690px) {
   #services .services-content .card {
     width: 100%;
     height: 250px;
+  }
+  header.aktive {
+    padding: 5px 0;
   }
 }
 
@@ -747,8 +901,7 @@ footer .emri {
   .text-3 {
     font-size: 20px;
   }
-  .text-3 span {
-  }
+
   .x {
     font-size: 30px;
     position: absolute;
@@ -759,7 +912,7 @@ footer .emri {
     font-size: 22px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .left img {
     width: 300px;
     height: 300px;

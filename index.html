@@ -29,13 +29,18 @@
             <a href="#">Portfo<span>lio.</span></a>
         </div>
        <ul class="menu">
-           <!-- <i class="fas fa-times x"></i> -->
+            
           
            <li><a href="#top">Ballina</a></li>
            <li><a href="#about">Rreth Meje</a></li>
            <li><a href="#services">Sherbimet</a></li>
            <li><a href="#skills">Aftësit</a></li>
            <li><a href="#teams">Projektet</a></li>
+           <li><a href="#contact">Kontakti</a></li>
+           <select name="Gjuha" id="gjuha" onchange="ndryshoGjuhen()">
+               <option class="option" value="Shqip">SHQ</option>
+               <option class="option" value="English">EN</option>
+           </select>
        </ul>
        <div class="burger-div">
         <!-- <i class="fas fa-bars burger"></i> -->
@@ -50,10 +55,10 @@
        <section class="home" id="top">
            <div class="container">
                <div class="home-content">
-                   <div class="text-1">Hi, my name is</div>
+                   <div class="text-1">Pershendetje, une jam</div>
                    <div class="text-2">Driton Gashi</div>
-                   <div class="text-3">and i'm a <span class="typing"></span></div>
-                   <a href="#">Hire Me</a>
+                   <div class="text-3"><div style="display: inline;" class="text-31">dhe une jam nje</div> <span class="typing"></span></div>
+                   <a href="tel:044816821">Me Kontakto</a>
                </div>
            </div>
        </section>
@@ -62,12 +67,14 @@
                <h1 class="title">Rreth Meje</h1>
                <div class="about-content">
                 <div class="column left">
-                    <img src="./img/selfie.png">
+                    <img src="./img/selfie2.png">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Driton and I'm a <span class="typing-2"></span></div>
-                    <p> Pershendetje une jam Dritoni jam 18 Vjeq dhe jam  nje Junior Developer qe sapo kam filluar karrieren si front-end dhe shum shpejt Full-Stack. Sapo kam mbaruar shkollen e Mesme dhe tani jam student ne Kolegjin UBT (Computer Science). Dhe keto jan teknologjit qe une i perdor: HTML, CSS, JS, Bootstrap, SCSS, Jquery, Git.</p>
-                    <a href="./cv.pdf" download>Download CV</a>
+                    <p> <!-- Pershendetje une jam Dritoni jam 18 Vjeq dhe jam  nje Junior Developer qe sapo kam filluar karrieren si front-end dhe shum shpejt Full-Stack. Sapo kam mbaruar shkollen e Mesme dhe tani jam student ne Kolegjin UBT (Computer Science). Dhe keto jan teknologjit qe une i perdor: HTML, CSS, JS, Bootstrap, SCSS, Jquery, Git. -->
+                       Une jam nje Developer i ri dhe shum i entuziazmuar te filloj karrieren si nje Web Developer. Shum i afte dhe Punetor ne ate qe bej por mbi te gjitha i adaptueshem me teknologjit e rej, duke bere progres gjdo dite e me shum. Kto jan teknologjit qe une i perdor HTML, CSS, JS, Bootstrap, SCSS, Jquery, Git.
+                    </p>
+                    <a href="./cv.pdf" target="_blank">Download CV</a>
                 </div>
                </div>
            </div>
@@ -80,7 +87,7 @@
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
                         <div class="text">Web Design</div>
-                        <p>Une ofroj Website me dizajne gjithmon unike,atraktive dhe responsive me qmime tejet te uleta</p>
+                        <p>Une ofroj Website me dizajne gjithmon unike,atraktive dhe me e rendesishmja responsive per gjdo pajisje</p>
                     </div>
                 </div>
                 <div class="card">
@@ -96,7 +103,7 @@
                         <div class="text">Hosting</div>
                         <p>
                             <!-- Une po ashtu ofroj dizajnimin e aplikacioneve te ndryshme gjithmon unike te cilat mund te perdoren ne projektin tuaj! -->
-                        Une po ashtu bej Hostimin dhe mirëmbajtjen e faqes tuaj 
+                        Une po ashtu bej Hostimin dhe mirëmbajtjen e faqes tuaj! 
                         </p>
                     </div>
                 </div>
@@ -110,7 +117,7 @@
                 <div class="column">
                     <div class="text">Aftësit e mija kreative dhe eksperienca</div>
                     <p>Une jam nje junior Front End Developer me 1+ vjet ne kete fushë. Une po ashtu kam dy Certifikata ne po te njejten fush njeren nga kompania <a href="http://www.comingpe.com/">Com-ing</a> (50+ Hours of training) ne Pejë dhe tjetren nga <a href="https://e.ictkosovo.eu/">ICT Kosova</a> (300+ Hours of training) ne Prishtinë</p>
-                    <a href="#" class="read-more">Read more</a>
+                    <a href="./cv.pdf" target="_blank" class="read-more">Read more</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -123,28 +130,28 @@
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>75%</span>
+                            <span>80%</span>
                         </div>
                     <div class="line css"></div>
                 </div>
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>55%</span>
+                            <span>70%</span>
                         </div>
                     <div class="line js"></div>
                 </div>
                     <div class="bars">
                         <div class="info">
                             <span>Bootstrap</span>
-                            <span>60%</span>
+                            <span>50%</span>
                         </div>
                     <div class="line bs"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>Git</span>
-                            <span>40%</span>
+                            <span>60%</span>
                         </div>
                     <div class="line git"></div>
                 </div>
@@ -162,7 +169,7 @@
                    <div class="box">
                     <img src="/img/logo2.png" alt="">
                     <div class="text">Euro Dekor</div>
-                    <p>Euro Dekor eshte nje kompani e mobileve ne qytetin e Pejes e cila...</p>
+                    <p class="euroDekor">Euro Dekor eshte nje kompani e mobileve ne qytetin e Pejes e cila...</p>
                     <div class="github"><i class="fab fa-github"></i></div>
                     </div>                    
                 </div>
@@ -172,41 +179,62 @@
                     <div class="box">
                      <img class="moes-bar" src="/img/logo.PNG" alt="">
                      <div class="text">Moes Bar</div>
-                     <p>Moes Bar eshte nje shisha-bar i ri ne qytetin e Pejes, ne te cilin..  </p>
-                    <div class="github"><i class="fab fa-github"></i></div>
-                     </div>                    
-                 </div>
-                 </a>
-                 <a href="./index.html">
-                 <div class="card">
-                    <div class="box">
-                     <img src="/img/IMG_0038.WEBP" alt="">
-                     <div class="text">This Site</div>
-                     <p>Kjo eshte portofolio ime ku edhe sherben si nje nga projektet e mia..</p>
+                     <p class="moesBar">Moes Bar eshte nje shisha-bar i ri ne qytetin e Pejes, ne te cilin...  </p>
                     <div class="github"><i class="fab fa-github"></i></div>
                      </div>                    
                  </div>
                  </a>
                  <a href="https://dg-movies.netlify.app/">
+                    <div class="card">
+                       <div class="box">
+                        <img src="https://dg-movies.netlify.app/img/logo_transparent.png" alt="">
+                        <div class="text">DG Movies</div>
+                        <p class="dgMovies">DG Movies eshte nje free movie streaming website ku  gjenden...</p>
+                       <div class="github"><i class="fab fa-github"></i></div>
+                        </div>                    
+                    </div>
+                    </a>
+                 <a href="./index.html">
                  <div class="card">
                     <div class="box">
-                     <img src="https://dg-movies.netlify.app/img/logo_transparent.png" alt="">
-                     <div class="text">DG-Movies</div>
-                     <p>DG Movies eshte nje free movie streaming website ne te cilin gjenden...</p>
+                     <img src="/img/IMG_0038.WEBP" alt="">
+                     <div class="text">This Site</div>
+                     <p class="thisSite">Kjo eshte portofolio ime ku edhe sherben si nje nga projektet e mia...</p>
                     <div class="github"><i class="fab fa-github"></i></div>
                      </div>                    
                  </div>
                  </a>
+                 
             </div>
         </div>
     </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="title">Kontakti</h2>
+                
+            <form action="https://formsubmit.co/DritonGashi1995@gmail.com" method="POST">
+               <div>
+                <input type="hidden" name="_subject" value="Message From Your Website">
+                <input type="text" name="name" required placeholder="Your Name" id="name">
+                <input type="email" name="email" required placeholder="Email Address" id="email">
+                <input type="hidden" name="_next" value="https://driton-gashi.netlify.app/">
+<textarea placeholder="Your Message" class="form-control" name="message" rows="6" required id="text-area"></textarea>
+<input type="hidden" name="_autoresponse" value="Ne sapo morrem mesazhin tend dhe do you pergjigjemi se shpejti!">
+<input type="hidden" name="_template" value="table">
+                <button type="submit" id="btn">Send</button>
+               </div>
+                </form>
+        </div>
+
+    </section>
     <footer>
-        <span>Created By <span class="emri">Driton Gashi</span> | <span class="far fa-copyright"></span>2020 All rights reserved.</span>
-    
+        <span>Created By <span class="emri">Driton Gashi</span> | <span class="far fa-copyright"></span>2021 All rights reserved.</span>
+        <span class="social-media"><a href="https://www.instagram.com/driitongashi/" target="_blank"><i class="fab fa-instagram "></i></a><a href="https://www.linkedin.com/in/driton-gashi-23a70020a/" target="_blank"><i class="fab fa-linkedin "></i></a><a href="https://www.facebook.com/driton.gashi.39/" target="_blank"><i class="fab fa-facebook-square "></i></a></span>
     </footer>
     <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
+        <span class="loader"><span class="loader-inner"></span></span>  
     </div>
-<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/gjuha.js"></script>
 </body>
 </html>
