@@ -190,11 +190,11 @@ header.aktive {
 
 .home {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
-    url(../img/background1\ -\ Copy.JPEG) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(../img/LightBulb.jpg) no-repeat center;
   color: white;
-  background-size: cover;
   min-height: 500px;
+  background-size: cover;
 }
 .home-content {
   position: absolute;
@@ -298,13 +298,6 @@ footer {
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
 }
 #about .about-content,
 #services .services-content,
@@ -874,6 +867,14 @@ footer .emri {
 }
 
 @media (max-width: 690px) {
+  .home {
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+      url(../img/LightBulb.jpg) no-repeat center;
+    color: white;
+    min-height: 500px;
+    background-size: cover;
+  }
   #services .services-content .card {
     width: 100%;
     height: 250px;
