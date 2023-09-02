@@ -6,7 +6,7 @@ Theme by: WebThemez.com
 Note: Please use our back link in your site
 */
 $( function() {
-        var endDate = "AUG  30, 2023 00:00:00";
+        var endDate = "SEP  30, 2023 00:00:00";
 
         $('.countdown.simple').countdown({ date: endDate });
 
